@@ -1,7 +1,4 @@
-# Shell-Entwicklung: Ein Einstieg in die Kunst der Automatisierung
-
-Willkommen in diesem Repository zur Shell-Entwicklung.  
-Hier findest du umfassende Anleitungen, praktische Beispiele und hilfreiche Tipps, um die Welt der Shell-Skripte zu erkunden. Egal, ob du ein Anfänger bist oder deine Fähigkeiten weiter vertiefen möchtest – dieses Projekt bietet dir die Ressourcen, die du brauchst, um effizient und sicher in der Shell zu arbeiten.
+# Shell-Entwicklung
 
 ---
 

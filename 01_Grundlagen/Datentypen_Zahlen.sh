@@ -40,6 +40,7 @@ echo "Modulo: $ZAHL1 % $ZAHL2 = $ERGEBNIS"
 ZAHL1_FLOAT=10.5
 ZAHL2_FLOAT=3.2
 
+
 # Beispiel für eine Division mit Gleitkommazahlen:
 ERGEBNIS=$(echo "$ZAHL1_FLOAT / $ZAHL2_FLOAT" | bc -l)
 echo "Division mit Gleitkommazahlen: $ZAHL1_FLOAT / $ZAHL2_FLOAT = $ERGEBNIS"

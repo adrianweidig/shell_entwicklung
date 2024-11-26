@@ -2,6 +2,28 @@
 # ============================================
 # Tutorial: Aufgabenplanung mit cron und at
 # ============================================
+#
+# ===============================
+# Übersicht der Befehle und Optionen
+# ===============================
+# | Befehl       | Beschreibung                                          |
+# |--------------|------------------------------------------------------|
+# | `cron`       | Hintergrunddienst für wiederkehrende Aufgaben         |
+# | `crontab`    | Verwaltung der Aufgaben für den Benutzer              |
+# | `at`         | Einmalige Aufgabenplanung zu einem bestimmten Zeitpunkt |
+# | `atq`        | Anzeigen der geplanten `at`-Aufgaben                 |
+# | `atrm`       | Löschen geplanter `at`-Aufgaben                      |
+# | `systemctl`  | Starten/Stoppen von Systemdiensten wie `cron`         |
+
+# | Crontab Syntax:
+# |  ┌───────────── Minute (0 - 59)
+# |  │ ┌─────────── Stunde (0 - 23)
+# |  │ │ ┌───────── Tag im Monat (1 - 31)
+# |  │ │ │ ┌─────── Monat (1 - 12)
+# |  │ │ │ │ ┌───── Wochentag (0 - 7) (0 und 7 sind beide Sonntag)
+# |  │ │ │ │ │
+# |  * * * * * Befehl
+
 # Hinweis: 
 # - Ein normaler Benutzer kann eigene **Cron- und At-Aufgaben** erstellen, solange er Mitglied der entsprechenden Gruppen (`cron` bzw. `at`) ist.
 # - **Root-Rechte** sind nur erforderlich, wenn Aufgaben für andere Benutzer geplant werden oder wenn das System dies aufgrund von Einschränkungen verlangt.

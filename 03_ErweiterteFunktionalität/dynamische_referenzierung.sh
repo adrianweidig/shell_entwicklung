@@ -67,7 +67,29 @@ cmd="date +%Y-%m-%d"
 result=$(eval $cmd)
 echo "Das Ergebnis des dynamischen Befehls \`$cmd\`: $result"
 
-## g. Sicherheitshinweis bei eval
+## g. Erklärung der Unterschiede bei der Variablenreferenzierung
+echo "### Beispiel: Unterschiede bei der Variablenreferenzierung ###"
+echo "Unterschiede zwischen \${item}, \$item, und \$$item:"
+
+# Beispiel-Variablen
+item="dynamic_var"
+dynamic_var="Wert der dynamischen Variable"
+
+echo "Direkter Zugriff mit \$dynamic_var: $dynamic_var"
+
+# 1. ${item}
+echo "Verwendung von \${item}: ${!item}"
+# Dies greift auf den Inhalt der Variablen zu, deren Name im Wert von $item gespeichert ist, wenn es richtig referenziert wird.
+
+# 2. \$item
+echo "Verwendung von \$item: $item"
+# Dies gibt einfach den Inhalt der Variablen $item aus, ohne auf den Wert der Variablen zuzugreifen, auf die $item zeigt.
+
+# 3. \$$item
+echo "Verwendung von \$$item: $(eval echo \$$item)"
+# \$$item wird mit eval verwendet, um indirekt auf eine Variable zuzugreifen, deren Name im Wert von $item gespeichert ist.
+
+## h. Sicherheitshinweis bei eval
 echo "### Wichtiger Hinweis ###"
 echo "Seien Sie vorsichtig bei der Verwendung von eval, da es potenziell unsichere Eingaben ausführen kann."
 echo "Nutzen Sie eval nur, wenn es keine sichereren Alternativen gibt."

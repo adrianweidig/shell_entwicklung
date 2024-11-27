@@ -41,8 +41,6 @@ yad --title="Drag and Drop mit YAD" \
             # Ändert die Besitzrechte der .bashrc auf die des neuen Nutzers
             #echo "chown "$line":"$line" /home/"$line"/.bashrc"
             
-            start_uid=$((start_uid + 1))
-            
             # -------------------------------
             # *** ÜBERSICHT DER ÄNDERUNGEN ***
             # -------------------------------
@@ -64,12 +62,13 @@ yad --title="Drag and Drop mit YAD" \
             echo -e "  - Falls aktiviert, wird /home/kit/.bashrc nach /home/$line kopiert."
             
             echo -e "\033[1;35m4. Besitzrechte der .bashrc geändert:\033[0m"
-            echo -e "  - Der Eigentümer von /home/$line/.bashrc wurde auf $line gesetzt."
+            echo -e "  - Falls aktiviert, wird der Eigentümer von /home/$line/.bashrc wurde auf $line gesetzt."
             
             echo -e "\033[1;37m5. UID für den nächsten Nutzer erhöht:\033[0m"
             echo -e "  - start_uid=$((start_uid + 1))"
             echo -e "\033[1;33m#-----------------------------------#\033[0m"
             
+            start_uid=$((start_uid + 1))
         done < "$FILE_PATH"
     fi
 done

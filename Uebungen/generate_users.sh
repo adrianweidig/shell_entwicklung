@@ -62,7 +62,7 @@ yad --title="Drag and Drop mit YAD" \
             echo -e "  - Falls aktiviert, wird /home/kit/.bashrc nach /home/$line kopiert."
             
             echo -e "\033[1;35m4. Besitzrechte der .bashrc geändert:\033[0m"
-            echo -e "  - Falls aktiviert, wird der Eigentümer von /home/$line/.bashrc wurde auf $line gesetzt."
+            echo -e "  - Falls aktiviert, wird der Eigentümer von /home/$line/.bashrc auf $line gesetzt."
             
             echo -e "\033[1;37m5. UID für den nächsten Nutzer erhöht:\033[0m"
             echo -e "  - start_uid=$((start_uid + 1))"

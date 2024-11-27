@@ -42,6 +42,9 @@ yad --title="Drag and Drop mit YAD" \
             #echo "chown "$line":"$line" /home/"$line"/.bashrc"
 
             start_uid=$((start_uid + 1))
+
+            
+
         done < "$FILE_PATH" 
     fi
 done

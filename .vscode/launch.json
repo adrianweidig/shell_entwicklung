@@ -8,7 +8,9 @@
             "type": "bashdb",
             "request": "launch",
             "name": "Bash-Debug (simplest configuration)",
-            "program": "${file}"
+            "program": "${file}",
+            "showDebugOutput": true,
+            "terminalKind": "integrated"
         }
     ]
 }

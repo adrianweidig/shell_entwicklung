@@ -1,4 +1,11 @@
 #!/usr/bin/bash
+
+# Zum Debuggen falls nix übergeben wurde
+if [ $# -eq 0 ]; then
+    set -- 10
+fi
+
+
 for ((i = 2; i <= $1; i++)); do
     is_prime=1
     for ((j = 2; j < $i; j++)); do

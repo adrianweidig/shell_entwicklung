@@ -1,5 +1,8 @@
 # Shell-Entwicklung
 
+> ab 29.11.2024 keine Änderungen mehr - aktueller Freeze-Zustand und keine weitere Bearbeitung
+
+
 ---
 
 ## Warum Shell-Entwicklung?
